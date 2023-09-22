@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-import { Code } from '../../proto/apache/rocketmq/v2/definition_pb';
-import { SendMessageResponse } from '../../proto/apache/rocketmq/v2/service_pb';
-import { MessageQueue } from '../route';
-import { StatusChecker } from '../exception';
+import { Code } from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { SendMessageResponse } from '../../proto/apache/rocketmq/v2/service_pb.js';
+import { MessageQueue } from '../route/index.js';
+import { StatusChecker } from '../exception/index.js';
 
 export class SendReceipt {
   readonly messageId: string;

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-import address from 'address';
+import { mac } from 'address';
 
 export enum MESSAGE_VERSION {
   V0 = 0x00,
@@ -110,14 +110,14 @@ export class MessageIdFactory {
 }
 
 // set current mac address
-address.mac((err, mac) => {
+mac((err, addr) => {
   if (err) {
     console.warn('[rocketmq-client-nodejs] can\'t get mac address, %s', err.message);
     return;
   }
-  if (!mac) {
+  if (!addr) {
     console.warn('[rocketmq-client-nodejs] can\'t get mac address');
     return;
   }
-  MessageIdFactory.MAC = mac.replaceAll(':', '');
+  MessageIdFactory.MAC = addr.replaceAll(':', '');
 });

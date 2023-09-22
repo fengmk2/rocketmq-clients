@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-export * from './Producer';
-export * from './PublishingLoadBalancer';
-export * from './PublishingSettings';
-export * from './SendReceipt';
-// export * from './Transaction';
-export * from './TransactionChecker';
+export * from './Producer.js';
+export * from './PublishingLoadBalancer.js';
+export * from './PublishingSettings.js';
+export * from './SendReceipt.js';
+export * from './Transaction.js';
+export * from './TransactionChecker.js';

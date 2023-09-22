@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-import { Status, Code } from '../../proto/apache/rocketmq/v2/definition_pb';
-import { BadRequestException } from './BadRequestException';
-import { ForbiddenException } from './ForbiddenException';
-import { InternalErrorException } from './InternalErrorException';
-import { NotFoundException } from './NotFoundException';
-import { PayloadTooLargeException } from './PayloadTooLargeException';
-import { PaymentRequiredException } from './PaymentRequiredException';
-import { ProxyTimeoutException } from './ProxyTimeoutException';
-import { RequestHeaderFieldsTooLargeException } from './RequestHeaderFieldsTooLargeException';
-import { TooManyRequestsException } from './TooManyRequestsException';
-import { UnauthorizedException } from './UnauthorizedException';
-import { UnsupportedException } from './UnsupportedException';
+import { Status, Code } from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { BadRequestException } from './BadRequestException.js';
+import { ForbiddenException } from './ForbiddenException.js';
+import { InternalErrorException } from './InternalErrorException.js';
+import { NotFoundException } from './NotFoundException.js';
+import { PayloadTooLargeException } from './PayloadTooLargeException.js';
+import { PaymentRequiredException } from './PaymentRequiredException.js';
+import { ProxyTimeoutException } from './ProxyTimeoutException.js';
+import { RequestHeaderFieldsTooLargeException } from './RequestHeaderFieldsTooLargeException.js';
+import { TooManyRequestsException } from './TooManyRequestsException.js';
+import { UnauthorizedException } from './UnauthorizedException.js';
+import { UnsupportedException } from './UnsupportedException.js';
 
 export class StatusChecker {
   static check(status?: Status.AsObject, requestId?: string) {

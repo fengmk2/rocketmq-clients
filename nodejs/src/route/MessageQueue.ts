@@ -16,11 +16,10 @@
  */
 
 import {
-  MessageQueue as MessageQueuePB, MessageType, Permission,
-  Resource,
-} from '../../proto/apache/rocketmq/v2/definition_pb';
-import { createResource } from '../util';
-import { Broker } from './Broker';
+  MessageQueue as MessageQueuePB, MessageType, Permission, Resource,
+} from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { createResource } from '../util/index.js';
+import { Broker } from './Broker.js';
 
 export class MessageQueue {
   topic: Resource.AsObject;

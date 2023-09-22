@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-import { Timestamp } from 'google-protobuf/google/protobuf/timestamp_pb';
+import { Timestamp } from 'google-protobuf/google/protobuf/timestamp_pb.js';
 import {
   MessageType, Message as MessagePB, SystemProperties, Encoding,
-} from '../../proto/apache/rocketmq/v2/definition_pb';
-import { PublishingSettings } from '../producer';
-import { createResource } from '../util';
-import { MessageQueue } from '../route';
-import { UserAgent } from '../client';
-import { Message, MessageOptions } from './Message';
-import { MessageIdFactory } from './MessageId';
+} from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { PublishingSettings } from '../producer/index.js';
+import { createResource } from '../util/index.js';
+import { MessageQueue } from '../route/index.js';
+import { UserAgent } from '../client/index.js';
+import { Message, MessageOptions } from './Message.js';
+import { MessageIdFactory } from './MessageId.js';
 
 export class PublishingMessage extends Message {
   readonly messageId: string;

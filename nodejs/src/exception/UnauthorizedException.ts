@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-import { ClientException } from './ClientException';
+import { ClientException } from './ClientException.js';
 
 export class UnauthorizedException extends ClientException {
   constructor(code: number, message: string, requestId?: string) {

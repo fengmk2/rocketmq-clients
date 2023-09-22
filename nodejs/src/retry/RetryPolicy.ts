@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-import { RetryPolicy as RetryPolicyPB } from '../../proto/apache/rocketmq/v2/definition_pb';
+import { RetryPolicy as RetryPolicyPB } from '../../proto/apache/rocketmq/v2/definition_pb.js';
 
 /**
  * Internal interface for retry policy.

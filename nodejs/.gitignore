@@ -5,3 +5,4 @@ rocketmq-all-*/
 nohup.out
 dist/
 coverage/
+.tshy*

@@ -19,11 +19,11 @@ import {
   Settings as SettingsPB,
   ClientType,
   Publishing,
-} from '../../proto/apache/rocketmq/v2/definition_pb';
-import { Endpoints } from '../route';
-import { ExponentialBackoffRetryPolicy } from '../retry';
-import { Settings, UserAgent } from '../client';
-import { createDuration } from '../util';
+} from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { Endpoints } from '../route/index.js';
+import { ExponentialBackoffRetryPolicy } from '../retry/index.js';
+import { Settings, UserAgent } from '../client/index.js';
+import { createDuration } from '../util/index.js';
 
 export class PublishingSettings extends Settings {
   readonly #topics: Set<string>;

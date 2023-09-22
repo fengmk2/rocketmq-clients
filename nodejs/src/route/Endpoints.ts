@@ -16,7 +16,9 @@
  */
 
 import { isIPv4, isIPv6 } from 'node:net';
-import { Address, AddressScheme, Endpoints as EndpointsPB } from '../../proto/apache/rocketmq/v2/definition_pb';
+import {
+  Address, AddressScheme, Endpoints as EndpointsPB,
+} from '../../proto/apache/rocketmq/v2/definition_pb.js';
 
 const DEFAULT_PORT = 80;
 

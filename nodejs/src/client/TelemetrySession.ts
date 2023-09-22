@@ -16,10 +16,10 @@
  */
 
 import { ClientDuplexStream } from '@grpc/grpc-js';
-import { TelemetryCommand } from '../../proto/apache/rocketmq/v2/service_pb';
-import { Endpoints } from '../route';
-import type { BaseClient } from './BaseClient';
-import { ILogger } from './Logger';
+import { TelemetryCommand } from '../../proto/apache/rocketmq/v2/service_pb.js';
+import { Endpoints } from '../route/index.js';
+import type { BaseClient } from './BaseClient.js';
+import { ILogger } from './Logger.js';
 
 export class TelemetrySession {
   #endpoints: Endpoints;

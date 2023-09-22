@@ -25,11 +25,11 @@ import {
   HeartbeatRequest, NotifyClientTerminationRequest, PullMessageRequest,
   QueryAssignmentRequest, QueryOffsetRequest, QueryRouteRequest,
   ReceiveMessageRequest, SendMessageRequest, UpdateOffsetRequest,
-} from '../../proto/apache/rocketmq/v2/service_pb';
-import { Endpoints } from '../route';
-import { ILogger } from './Logger';
-import { RpcClient } from './RpcClient';
-import type { BaseClient } from './BaseClient';
+} from '../../proto/apache/rocketmq/v2/service_pb.js';
+import { Endpoints } from '../route/index.js';
+import { ILogger } from './Logger.js';
+import { RpcClient } from './RpcClient.js';
+import type { BaseClient } from './BaseClient.js';
 
 const RPC_CLIENT_MAX_IDLE_DURATION = 30 * 60000; // 30 minutes
 const RPC_CLIENT_IDLE_CHECK_PERIOD = 60000;

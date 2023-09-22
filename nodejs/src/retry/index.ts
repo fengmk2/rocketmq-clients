@@ -15,5 +15,5 @@
  * limitations under the License.
  */
 
-export * from './ExponentialBackoffRetryPolicy';
-export * from './RetryPolicy';
+export * from './ExponentialBackoffRetryPolicy.js';
+export * from './RetryPolicy.js';

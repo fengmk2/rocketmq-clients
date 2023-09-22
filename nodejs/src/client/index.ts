@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-export * from './BaseClient';
-export * from './ClientId';
-export * from './Logger';
-export * from './UserAgent';
-export * from './RpcClient';
-export * from './RpcClientManager';
-export * from './SessionCredentials';
-export * from './Settings';
-export * from './TelemetrySession';
-export * from './UserAgent';
+export * from './BaseClient.js';
+export * from './ClientId.js';
+export * from './Logger.js';
+export * from './UserAgent.js';
+export * from './RpcClient.js';
+export * from './RpcClientManager.js';
+export * from './SessionCredentials.js';
+export * from './Settings.js';
+export * from './TelemetrySession.js';
+export * from './UserAgent.js';

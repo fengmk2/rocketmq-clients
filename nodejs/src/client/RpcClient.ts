@@ -16,7 +16,7 @@
  */
 
 import { ChannelCredentials, Metadata } from '@grpc/grpc-js';
-import { MessagingServiceClient } from '../../proto/apache/rocketmq/v2/service_grpc_pb';
+import { MessagingServiceClient } from '../../proto/apache/rocketmq/v2/service_grpc_pb.js';
 import {
   AckMessageRequest,
   AckMessageResponse,
@@ -46,8 +46,8 @@ import {
   SendMessageResponse,
   UpdateOffsetRequest,
   UpdateOffsetResponse,
-} from '../../proto/apache/rocketmq/v2/service_pb';
-import { Endpoints } from '../route';
+} from '../../proto/apache/rocketmq/v2/service_pb.js';
+import { Endpoints } from '../route/index.js';
 
 export class RpcClient {
   #client: MessagingServiceClient;

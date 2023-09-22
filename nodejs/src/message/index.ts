@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-export * from './Message';
-export * from './MessageId';
-export * from './MessageView';
-export * from './PublishingMessage';
+export * from './Message.js';
+export * from './MessageId.js';
+export * from './MessageView.js';
+export * from './PublishingMessage.js';

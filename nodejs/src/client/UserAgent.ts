@@ -18,7 +18,7 @@
 import os from 'node:os';
 import path from 'node:path';
 import { readFileSync } from 'node:fs';
-import { UA, Language } from '../../proto/apache/rocketmq/v2/definition_pb';
+import { UA, Language } from '../../proto/apache/rocketmq/v2/definition_pb.js';
 
 const VERSION: string = JSON.parse(readFileSync(path.join(__dirname, '../../package.json'), 'utf-8')).version;
 

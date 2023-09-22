@@ -23,7 +23,7 @@ import {
   Status,
   ClientType,
   Code,
-} from '../../proto/apache/rocketmq/v2/definition_pb';
+} from '../../proto/apache/rocketmq/v2/definition_pb.js';
 import {
   QueryRouteRequest,
   RecoverOrphanedTransactionCommand,
@@ -33,17 +33,17 @@ import {
   ThreadStackTrace,
   HeartbeatRequest,
   NotifyClientTerminationRequest,
-} from '../../proto/apache/rocketmq/v2/service_pb';
-import { createResource, getRequestDateTime, sign } from '../util';
-import { TopicRouteData, Endpoints } from '../route';
-import { ClientException, StatusChecker } from '../exception';
-import { Settings } from './Settings';
-import { UserAgent } from './UserAgent';
-import { ILogger, getDefaultLogger } from './Logger';
-import { SessionCredentials } from './SessionCredentials';
-import { RpcClientManager } from './RpcClientManager';
-import { TelemetrySession } from './TelemetrySession';
-import { ClientId } from './ClientId';
+} from '../../proto/apache/rocketmq/v2/service_pb.js';
+import { createResource, getRequestDateTime, sign } from '../util/index.js';
+import { TopicRouteData, Endpoints } from '../route/index.js';
+import { ClientException, StatusChecker } from '../exception/index.js';
+import { Settings } from './Settings.js';
+import { UserAgent } from './UserAgent.js';
+import { ILogger, getDefaultLogger } from './Logger.js';
+import { SessionCredentials } from './SessionCredentials.js';
+import { RpcClientManager } from './RpcClientManager.js';
+import { TelemetrySession } from './TelemetrySession.js';
+import { ClientId } from './ClientId.js';
 
 const debug = debuglog('rocketmq-client-nodejs:client:BaseClient');
 

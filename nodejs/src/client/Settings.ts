@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-import { ClientType, Settings as SettingsPB } from '../../proto/apache/rocketmq/v2/definition_pb';
-import { Endpoints } from '../route/Endpoints';
-import { RetryPolicy } from '../retry';
+import { ClientType, Settings as SettingsPB } from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { Endpoints } from '../route/index.js';
+import { RetryPolicy } from '../retry/index.js';
 
 export abstract class Settings {
   protected readonly clientId: string;

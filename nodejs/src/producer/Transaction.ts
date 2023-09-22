@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-import { TransactionResolution } from '../../proto/apache/rocketmq/v2/definition_pb';
-import { MessageOptions, PublishingMessage } from '../message';
-import type { Producer } from './Producer';
-import { SendReceipt } from './SendReceipt';
+import { TransactionResolution } from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { MessageOptions, PublishingMessage } from '../message/index.js';
+import type { Producer } from './Producer.js';
+import { SendReceipt } from './SendReceipt.js';
 
 export class Transaction {
   static readonly MAX_MESSAGE_NUM = 1;

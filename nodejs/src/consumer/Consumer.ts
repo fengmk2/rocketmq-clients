@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-import { Message, Status } from '../../proto/apache/rocketmq/v2/definition_pb';
+import { Message, Status } from '../../proto/apache/rocketmq/v2/definition_pb.js';
 import {
   AckMessageRequest,
   ChangeInvisibleDurationRequest,
   ReceiveMessageRequest, ReceiveMessageResponse,
-} from '../../proto/apache/rocketmq/v2/service_pb';
-import { MessageView } from '../message';
-import { MessageQueue } from '../route';
-import { StatusChecker } from '../exception';
-import { BaseClient, BaseClientOptions } from '../client';
-import { createDuration, createResource } from '../util';
-import { FilterExpression } from './FilterExpression';
+} from '../../proto/apache/rocketmq/v2/service_pb.js';
+import { MessageView } from '../message/index.js';
+import { MessageQueue } from '../route/index.js';
+import { StatusChecker } from '../exception/index.js';
+import { BaseClient, BaseClientOptions } from '../client/index.js';
+import { createDuration, createResource } from '../util/index.js';
+import { FilterExpression } from './FilterExpression.js';
 
 export interface ConsumerOptions extends BaseClientOptions {
   consumerGroup: string;

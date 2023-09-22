@@ -20,9 +20,9 @@ import {
   DigestType,
   Encoding,
   Message as MessagePB,
-} from '../../proto/apache/rocketmq/v2/definition_pb';
-import { crc32CheckSum, md5CheckSum, sha1CheckSum } from '../util';
-import { Endpoints, MessageQueue } from '../route';
+} from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { crc32CheckSum, md5CheckSum, sha1CheckSum } from '../util/index.js';
+import { Endpoints, MessageQueue } from '../route/index.js';
 
 export class MessageView {
   readonly messageId: string;

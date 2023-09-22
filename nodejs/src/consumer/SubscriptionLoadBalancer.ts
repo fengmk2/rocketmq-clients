@@ -16,9 +16,9 @@
  */
 
 import { randomInt } from 'node:crypto';
-import { Permission } from '../../proto/apache/rocketmq/v2/definition_pb';
-import { MessageQueue, TopicRouteData } from '../route';
-import { MASTER_BROKER_ID } from '../util';
+import { Permission } from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { MessageQueue, TopicRouteData } from '../route/index.js';
+import { MASTER_BROKER_ID } from '../util/index.js';
 
 export class SubscriptionLoadBalancer {
   #index: number;

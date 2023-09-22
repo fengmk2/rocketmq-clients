@@ -21,31 +21,31 @@ import {
   ClientType,
   MessageType,
   TransactionResolution,
-} from '../../proto/apache/rocketmq/v2/definition_pb';
+} from '../../proto/apache/rocketmq/v2/definition_pb.js';
 import {
   EndTransactionRequest,
   HeartbeatRequest,
   NotifyClientTerminationRequest,
   RecoverOrphanedTransactionCommand,
   SendMessageRequest,
-} from '../../proto/apache/rocketmq/v2/service_pb';
+} from '../../proto/apache/rocketmq/v2/service_pb.js';
 import {
   Endpoints,
   MessageQueue,
   TopicRouteData,
-} from '../route';
+} from '../route/index.js';
 import {
   ExponentialBackoffRetryPolicy,
-} from '../retry';
-import { StatusChecker, TooManyRequestsException } from '../exception';
-import { BaseClient, BaseClientOptions, Settings } from '../client';
-import { PublishingMessage, MessageOptions, MessageView, Message } from '../message';
-import { PublishingSettings } from './PublishingSettings';
-import { TransactionChecker } from './TransactionChecker';
-import { PublishingLoadBalancer } from './PublishingLoadBalancer';
-import { SendReceipt } from './SendReceipt';
-import { Transaction } from './Transaction';
-import { createResource } from '../util';
+} from '../retry/index.js';
+import { StatusChecker, TooManyRequestsException } from '../exception/index.js';
+import { BaseClient, BaseClientOptions, Settings } from '../client/index.js';
+import { PublishingMessage, MessageOptions, MessageView, Message } from '../message/index.js';
+import { createResource } from '../util/index.js';
+import { PublishingSettings } from './PublishingSettings.js';
+import { TransactionChecker } from './TransactionChecker.js';
+import { PublishingLoadBalancer } from './PublishingLoadBalancer.js';
+import { SendReceipt } from './SendReceipt.js';
+import { Transaction } from './Transaction.js';
 
 export interface ProducerOptions extends BaseClientOptions {
   topic?: string | string[];

@@ -16,12 +16,12 @@
  */
 
 import assert from 'node:assert';
-import { Duration } from 'google-protobuf/google/protobuf/duration_pb';
+import { Duration } from 'google-protobuf/google/protobuf/duration_pb.js';
 import {
   RetryPolicy as RetryPolicyPB,
   ExponentialBackoff,
-} from '../../proto/apache/rocketmq/v2/definition_pb';
-import { RetryPolicy } from './RetryPolicy';
+} from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { RetryPolicy } from './RetryPolicy.js';
 
 export class ExponentialBackoffRetryPolicy implements RetryPolicy {
   #maxAttempts: number;

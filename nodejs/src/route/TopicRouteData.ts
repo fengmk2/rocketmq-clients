@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-import { MessageQueue as MessageQueuePB } from '../../proto/apache/rocketmq/v2/definition_pb';
-import { Endpoints } from './Endpoints';
-import { MessageQueue } from './MessageQueue';
+import { MessageQueue as MessageQueuePB } from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { Endpoints } from './Endpoints.js';
+import { MessageQueue } from './MessageQueue.js';
 
 export class TopicRouteData {
   readonly messageQueues: MessageQueue[] = [];

@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-import { ClientType } from '../../proto/apache/rocketmq/v2/definition_pb';
-import { HeartbeatRequest, NotifyClientTerminationRequest } from '../../proto/apache/rocketmq/v2/service_pb';
-import { MessageView } from '../message';
-import { TopicRouteData } from '../route';
-import { createResource } from '../util';
-import { FilterExpression } from './FilterExpression';
-import { SimpleSubscriptionSettings } from './SimpleSubscriptionSettings';
-import { SubscriptionLoadBalancer } from './SubscriptionLoadBalancer';
-import { Consumer, ConsumerOptions } from './Consumer';
+import { ClientType } from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { HeartbeatRequest, NotifyClientTerminationRequest } from '../../proto/apache/rocketmq/v2/service_pb.js';
+import { MessageView } from '../message/index.js';
+import { TopicRouteData } from '../route/index.js';
+import { createResource } from '../util/index.js';
+import { FilterExpression } from './FilterExpression.js';
+import { SimpleSubscriptionSettings } from './SimpleSubscriptionSettings.js';
+import { SubscriptionLoadBalancer } from './SubscriptionLoadBalancer.js';
+import { Consumer, ConsumerOptions } from './Consumer.js';
 
 export interface SimpleConsumerOptions extends ConsumerOptions {
   /**

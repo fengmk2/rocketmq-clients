@@ -19,11 +19,11 @@ import {
   Settings as SettingsPB,
   ClientType,
   Subscription,
-} from '../../proto/apache/rocketmq/v2/definition_pb';
-import { Endpoints } from '../route';
-import { Settings, UserAgent } from '../client';
-import { createDuration, createResource } from '../util';
-import { FilterExpression } from './FilterExpression';
+} from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { Endpoints } from '../route/index.js';
+import { Settings, UserAgent } from '../client/index.js';
+import { createDuration, createResource } from '../util/index.js';
+import { FilterExpression } from './FilterExpression.js';
 
 export class SimpleSubscriptionSettings extends Settings {
   readonly longPollingTimeout: number;

@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-import { TransactionResolution } from '../../proto/apache/rocketmq/v2/definition_pb';
-import { MessageView } from '../message';
+import { TransactionResolution } from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { MessageView } from '../message/index.js';
 
 export interface TransactionChecker {
   check(messageView: MessageView): Promise<TransactionResolution>;

@@ -15,7 +15,9 @@
  * limitations under the License.
  */
 
-import { FilterType, FilterExpression as FilterExpressionPB } from '../../proto/apache/rocketmq/v2/definition_pb';
+import {
+  FilterType, FilterExpression as FilterExpressionPB,
+} from '../../proto/apache/rocketmq/v2/definition_pb.js';
 
 const TAG_EXPRESSION_SUB_ALL = '*';
 

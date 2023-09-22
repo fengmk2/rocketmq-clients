@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-export * from './Broker';
-export * from './Endpoints';
-export * from './MessageQueue';
-export * from './TopicRouteData';
+export * from './Broker.js';
+export * from './Endpoints.js';
+export * from './MessageQueue.js';
+export * from './TopicRouteData.js';

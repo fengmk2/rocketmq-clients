@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-import { ClientException } from './ClientException';
+import { ClientException } from './ClientException.js';
 
 export class PayloadTooLargeException extends ClientException {
   constructor(code: number, message: string, requestId?: string) {

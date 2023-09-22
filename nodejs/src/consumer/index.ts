@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-export * from './Consumer';
-export * from './FilterExpression';
-export * from './SimpleConsumer';
-export * from './SimpleSubscriptionSettings';
-export * from './SubscriptionLoadBalancer';
+export * from './Consumer.js';
+export * from './FilterExpression.js';
+export * from './SimpleConsumer.js';
+export * from './SimpleSubscriptionSettings.js';
+export * from './SubscriptionLoadBalancer.js';

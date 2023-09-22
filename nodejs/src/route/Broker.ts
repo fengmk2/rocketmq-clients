@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-import { Broker as BrokerPB } from '../../proto/apache/rocketmq/v2/definition_pb';
-import { Endpoints } from './Endpoints';
+import { Broker as BrokerPB } from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { Endpoints } from './Endpoints.js';
 
 export class Broker implements BrokerPB.AsObject {
   name: string;

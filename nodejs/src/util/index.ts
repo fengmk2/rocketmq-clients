@@ -17,10 +17,10 @@
 
 import { performance } from 'node:perf_hooks';
 import { createHash, createHmac } from 'node:crypto';
-import { Duration } from 'google-protobuf/google/protobuf/duration_pb';
+import { Duration } from 'google-protobuf/google/protobuf/duration_pb.js';
 import { crc32 } from '@node-rs/crc32';
 import siphash24 from 'siphash24';
-import { Resource } from '../../proto/apache/rocketmq/v2/definition_pb';
+import { Resource } from '../../proto/apache/rocketmq/v2/definition_pb.js';
 
 export const MASTER_BROKER_ID = 0;
 

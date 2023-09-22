@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-export * from './BadRequestException';
-export * from './ClientException';
-export * from './ForbiddenException';
-export * from './InternalErrorException';
-export * from './NotFoundException';
-export * from './PayloadTooLargeException';
-export * from './PaymentRequiredException';
-export * from './ProxyTimeoutException';
-export * from './RequestHeaderFieldsTooLargeException';
-export * from './StatusChecker';
-export * from './TooManyRequestsException';
-export * from './UnauthorizedException';
-export * from './UnsupportedException';
+export * from './BadRequestException.js';
+export * from './ClientException.js';
+export * from './ForbiddenException.js';
+export * from './InternalErrorException.js';
+export * from './NotFoundException.js';
+export * from './PayloadTooLargeException.js';
+export * from './PaymentRequiredException.js';
+export * from './ProxyTimeoutException.js';
+export * from './RequestHeaderFieldsTooLargeException.js';
+export * from './StatusChecker.js';
+export * from './TooManyRequestsException.js';
+export * from './UnauthorizedException.js';
+export * from './UnsupportedException.js';

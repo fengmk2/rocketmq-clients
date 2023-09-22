@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-export * from './consumer';
-export * from './exception';
-export * from './message';
-export * from './producer';
-export * from './retry';
-export * from './route';
+export * from './consumer/index.js';
+export * from './exception/index.js';
+export * from './message/index.js';
+export * from './producer/index.js';
+export * from './retry/index.js';
+export * from './route/index.js';

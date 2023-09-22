@@ -16,9 +16,9 @@
  */
 
 import { randomInt } from 'node:crypto';
-import { Permission } from '../../proto/apache/rocketmq/v2/definition_pb';
-import { Endpoints, MessageQueue, TopicRouteData } from '../route';
-import { MASTER_BROKER_ID, calculateStringSipHash24 } from '../util';
+import { Permission } from '../../proto/apache/rocketmq/v2/definition_pb.js';
+import { Endpoints, MessageQueue, TopicRouteData } from '../route/index.js';
+import { MASTER_BROKER_ID, calculateStringSipHash24 } from '../util/index.js';
 
 export class PublishingLoadBalancer {
   #index: number;
